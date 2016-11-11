@@ -1,0 +1,15 @@
+f=open("C:\\temp\\a.txt", mode='wt', encoding="utf-8")
+#help(f)
+
+f.write("Test1")
+f.write(". Test2\n")
+f.write("Test3")
+f.close()
+
+g=open("C:\\temp\\a.txt", mode="rt", encoding="utf-8")
+g.readline()
+g.readline()
+g.readline()
+g.seek(0)
+g.readlines()
+g.close()
